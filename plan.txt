@@ -1,0 +1,8 @@
+class:
+1. desktop and mobile - to hide and display desktop and mobile formats
+2. gray-bg and white-bg - for gray and white background
+3. darkgray and lightgray - for dark and light gray color
+4. flexdiv - for flex with 60-40 sizes
+5. flexwrap - for wrapping
+6. image-container and content-container
+7. main and secondary

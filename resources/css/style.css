@@ -1,0 +1,242 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    color: rgb(87, 81, 81);
+    border: 1px solid rgb(65, 61, 61);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6, span {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    margin: 0;
+    height: 4rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    z-index: 5;
+}
+
+footer {
+    border-top: 1px solid rgb(230, 223, 223);
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+
+.navlink {
+    color:rgb(65, 61, 61);
+}
+.light-gray {
+    color: rgb(201, 200, 200)
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.light-bg {
+    background-color: rgb(230, 223, 223);
+}
+
+.dark-bg {
+    background-color:rgb(65, 61, 61);
+}
+
+.mobile {
+    display: none;
+}
+
+nav.desktop {
+    margin: auto 0px;
+}
+
+nav.desktop a {
+    margin-left: 1rem;
+}
+
+.flexdiv {
+    display: flex;
+}
+
+.divhead {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.divhead {
+    text-align: center;
+}
+
+.main {
+    flex-basis: 60%;
+    padding: 2rem 1.5rem;
+}
+
+.secondary {
+    flex-basis: 40%;
+    display: flex;
+    flex-flow: column;
+}
+
+.secondarydivs {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px double rgb(230, 223, 223);
+    border-left: 1px solid rgb(230, 223, 223);
+}
+
+
+.secondarydivs:hover {
+    background-color: rgb(230, 223, 223);
+}
+
+.secondarydivs .media-container {
+    flex-basis: 35%;
+    margin: 1rem 1rem;
+    
+}
+
+.secondarydivs .content-container {
+    flex-basis: 65%;
+    margin: auto 0px;
+    padding: 0px auto;
+}
+
+.media-container img, video {
+    width: 100%;
+}
+
+.flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+}
+
+.content-course::before {
+    content:'COURSES\A\A';
+    white-space: pre-wrap;
+}
+
+
+#logo {
+    height: 2rem;
+    margin: auto 0px;
+}
+
+#logo img {
+    vertical-align: middle;
+}
+
+#logo span {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#banner img {
+    width: 100%;
+}
+
+#banner .secondary {
+    text-align: center;
+    margin: auto 0px;
+    padding: 0 auto;
+}
+
+#btn {
+    padding: .5rem 5%;
+}
+
+#courses {
+    padding: 2rem 3.5rem;
+}
+
+#courses .course {
+    margin: 1rem 1rem;
+    width: 25%;
+    min-width: 10rem;
+    flex-shrink: 0;
+    
+}
+
+#courses .content-container {
+    padding: 1rem 1rem;
+}
+
+#information #main-caption h2{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#thesis h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    footer {
+        font-size: small;
+    }
+    
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
+    #logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .secondary, .secondarydivs {
+        flex-flow: column;
+        flex-basis: 100%;
+    }
+
+    .secondarydivs .content-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .flexwrap {
+        align-content:flex-start
+    }
+    .course {
+        flex-basis: 100%;
+    }
+    #banner {
+        flex-flow: column;
+    }
+
+    #banner .secondary {
+        padding: 0 1rem 2rem 1rem;
+    }
+
+    #thesis .main {
+        flex-basis: 100%;
+    }
+}
