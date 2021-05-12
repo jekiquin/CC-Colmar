@@ -3,13 +3,16 @@ html {
     font-size: 16px;
     line-height: 2;
     color: rgb(87, 81, 81);
-    border: 1px solid rgb(65, 61, 61);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    border: 1px solid rgb(65, 61, 61);
+    margin: 0px;
+    padding: 0px;
 }
 
 p, h1, h2, h3, h4, h5, h6, span {
@@ -21,12 +24,17 @@ a {
     text-decoration: none;
 }
 
+header, main, footer {
+    width: 100%;
+}
+
 header, footer {
     display: flex;
     justify-content: space-between;
 }
 
 header {
+    position: fixed;
     margin: 0;
     height: 4rem;
     padding-right: 1.5rem;
@@ -86,6 +94,7 @@ nav.desktop a {
 .main {
     flex-basis: 60%;
     padding: 2rem 1.5rem;
+    margin-top: 4rem;
 }
 
 .secondary {
@@ -135,7 +144,7 @@ nav.desktop a {
 }
 
 .content-course::before {
-    content:'COURSES\A\A';
+    content:'\A COURSES\A\A';
     white-space: pre-wrap;
 }
 
@@ -175,7 +184,7 @@ nav.desktop a {
 #courses .course {
     margin: 1rem 1rem;
     width: 25%;
-    min-width: 10rem;
+    min-width: 15rem;
     flex-shrink: 0;
     
 }
@@ -194,6 +203,11 @@ nav.desktop a {
     margin-bottom: 0;
 }
 
+@media only screen and (max-width: 640px) {
+    html {
+        font-size: 12px;
+    }
+}
 @media only screen and (max-width: 480px) and (orientation: portrait) {
     footer {
         font-size: small;
