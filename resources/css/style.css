@@ -15,7 +15,7 @@ body {
     padding: 0px;
 }
 
-p, h1, h2, h3, h4, h5, h6, span {
+p, h1, h1, h3, h4, h5, h6, span {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -41,7 +41,9 @@ header {
     padding-left: 1.5rem;
     z-index: 5;
 }
-
+main {
+    margin-top: 4rem;
+}
 footer {
     border-top: 1px solid rgb(230, 223, 223);
     padding: 1rem 1.5rem 0 1.5rem;
@@ -94,7 +96,6 @@ nav.desktop a {
 .main {
     flex-basis: 60%;
     padding: 2rem 1.5rem;
-    margin-top: 4rem;
 }
 
 .secondary {
@@ -193,12 +194,12 @@ nav.desktop a {
     padding: 1rem 1rem;
 }
 
-#information #main-caption h2{
+#information #main-caption h1{
     margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
 
-#thesis h2 {
+#thesis h1 {
     margin-top: 1.5rem;
     margin-bottom: 0;
 }
