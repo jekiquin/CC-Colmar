@@ -147,6 +147,7 @@ section:nth-child(even) {
 
 .media {
     width: 100%;
+    height: auto;
     overflow: hidden;
 }
 
@@ -162,6 +163,7 @@ section:nth-child(even) {
 }
 
 #start-here-button {
+    cursor: pointer;
     width: 80%;
     padding: 0.5rem 0;
     border: 0;
